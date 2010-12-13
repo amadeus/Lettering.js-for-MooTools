@@ -24,7 +24,7 @@ provides: [Element.lettering]
 (function(){
 
 var injector = function(t, splitter, klass, after){
-	var a = t.get('html').split(splitter), inject = '';
+	var a = t.get('text').split(splitter), inject = '';
 
 	if (!a.length) return;
 
