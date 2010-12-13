@@ -46,15 +46,19 @@ var methods = {
 	},
 
 	lines : function() {
-		var r = "eefec303079ad17405c889e092e105b0";
-		this.set('html', this.get('html').replace(/<br[^>]*>/gi, r));
-		return injector(this, r, 'line', '');
+		return injector(this, /<br[^>]*>/gi, 'line', '');
+	},
+
+	custom: function(options) {
+		options = options || {};
+		return injector(this, options.split || '', 'group', options.after || '');
 	}
 };
 
-Element.implement('lettering', function(method){
-	if (method && methods[method])
-		methods[method].apply(this);
+Element.implement('lettering', function(method, options){
+	if (method && methods[method]) {
+		methods[method].apply(this, Array.from(options));
+	}
 	else if (method === 'letters' || !method )
 		methods.init.apply(this);
 
