@@ -2,5 +2,6 @@
 
 Based on the jQuery plugin Lettering.js
 
-https://github.com/davatron5000/Lettering.js
-http://lettering.js
+[Link](https://github.com/davatron5000/Lettering.js "https://github.com/davatron5000/Lettering.js")
+
+[Link](http://lettering.js "http://lettering.js")
