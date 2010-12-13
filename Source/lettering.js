@@ -56,9 +56,8 @@ var methods = {
 };
 
 Element.implement('lettering', function(method, options){
-	if (method && methods[method]) {
+	if (method && methods[method])
 		methods[method].apply(this, Array.from(options));
-	}
 	else if (method === 'letters' || !method )
 		methods.init.apply(this);
 
