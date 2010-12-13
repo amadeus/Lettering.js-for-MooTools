@@ -35,7 +35,6 @@ var injector = function(t, splitter, klass, after){
 	t.set('html', inject);
 };
 
-
 var methods = {
 	init: function() {
 		return injector(this, '', 'char', '');
