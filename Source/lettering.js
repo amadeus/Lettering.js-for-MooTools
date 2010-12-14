@@ -1,5 +1,6 @@
 /*
 ---
+
 description:
 	Lettering.js for MooTools
 	Ported from the jQuery plugin Lettering.js
@@ -7,17 +8,18 @@ description:
 	http://daverupert.com
 
 license:
-	WTFPL license
-	http://sam.zoy.org/wtfpl/
+	- WTFPL license
+	- http://sam.zoy.org/wtfpl/
 
 authors:
 	- Dave Rupert
 	- Amadeus Demarzi (http://amadeusamade.us)
 
 requires:
-	core/1.3: [Core/Element, Core/Array]
+	- core/1.3: [Core/Element, Core/Array]
 
 provides: [Element.lettering]
+
 ...
 */
 
