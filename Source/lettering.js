@@ -19,7 +19,7 @@ requires:
 	- core/1.3: [Core/Element, Core/Array]
 
 provides:
-	- [Element.lettering]
+	- Element.lettering
 
 ...
 */
