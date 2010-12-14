@@ -18,7 +18,8 @@ authors:
 requires:
 	- core/1.3: [Core/Element, Core/Array]
 
-provides: [Element.lettering]
+provides:
+	- [Element.lettering]
 
 ...
 */
